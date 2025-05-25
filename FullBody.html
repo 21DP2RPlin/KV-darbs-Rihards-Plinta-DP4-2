@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treniņu programma</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+
+        .containerPR {
+            width: 80%;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 10px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contactinfo.html">Kontaktinformācija</a></li>
+        <li><a href="ParVietni.html">Par vietni</a></li>
+        <li><a href="Map.html">Laukumu karte</a></li>
+        <li><a href="profile.php">Profils</a></li>
+    </ul>
+    
+    <div class="containerPR">
+        <h1>"FULL BODY" treniņu programma</h1>
+
+        <div class="section">
+            <h2>Lejupielādēt treniņu programmas bildi</h2>
+        
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 10px;">
+                <form action="download_image.php" method="get">
+                    <input type="hidden" name="id" value="2">  <!-- value = picture ID database-->
+                    <button type="submit" style="
+                        padding: 10px 20px;
+                        background-color: #28a745;
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                    ">
+                        <i class="fas fa-download"></i> Lejupielādēt bildi
+                    </button>
+                </form>
+        
+                <form action="view_image.php" method="get" target="_blank">
+                    <input type="hidden" name="id" value="2"> <!-- value = picture ID database-->
+                    <button type="submit" style="
+                        padding: 10px 20px;
+                        background-color: #007bff;
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                    ">
+                        <i class="fas fa-eye"></i> Apskatīt bildi
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        
+        <div class="section">
+            <h2>Ievads</h2>
+            <p>"FULL BODY" ir treniņu metode, kurā vienā sesijā tiek trenētas visa ķermeņa muskuļu grupas.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Iesildīšana</h2>
+            <p>Sāciet ar dinamisku stiepšanos, lai sagatavotu muskuļus.</p>
+            <div class="image-container">
+                <video src="images/Warmup.mp4" controls width="500"></video>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Galvena treniņu programma</h2>
+            <p>Pārtraukumi starp vingrinājumiem no 2 līdz 4 minūtem, atkarībā no jūsu fiziskas sagatavotīvas līmeņa. Pārtraukumu ilgumu jāizvēlas tā, lai visus vingrinājumus varētu izpildīt labā kvalitātē.</p>
+            <ul>
+                <li>Austrālijas pievilkšanās (stienis novietots krūšu līmeņa augstumā) - 3-5 piegājeni ar 15-20 atkārtojumiem</li>
+                <li>Atspiešanās - 2-3 piegājieni ar 15-20 atkārtojumiem</li>
+                <li>Pietupieni - 2-3 piegājieni ar 15-20 atkārtojumiem</li>
+                <li>Pievilkti ceļi pie krūtīm - 2-3 piegājieni ar 10-15 atkārtojumiem</li>
+                <li>Pievilkšanās - 2-3 piegājieni ar 8-12 atkārtojumiem</li>
+                <li>Reversā satveriena pievilkšanas - 2-3 piegājieni ar 8-12 atkartojumiem</li>
+                <li>Plank - 2-3 piegājieni uz maksimumu</li>
+            </ul>
+            <div class="image-container">
+                <p>Austrālijas pievilkšanās</p>
+                <img src="images/AustPiev.jpg" alt="Workout Demonstration">
+                <p>Atspiešanās</p>
+                <img src="images/Atspiešanās.jpg" alt="Workout Demonstration">
+                <p>Pietupieni</p>
+                <img src="images/Pietupieni.jpg" alt="Workout Demonstration">
+                <p>Pievilkti ceļi pie krūtīm</p>
+                <img src="images/kolenipodyem.jpg" alt="Workout Demonstration">
+                <p>Pievilkšanās</p>
+                <img src="images/Pievilkšanās.jpg" alt="Workout Demonstration">
+                <p>Reversā satveriena pievilkšanas</p>
+                <img src="images/Pievilkšanas2.jpg" alt="Workout Demonstration">
+                <p>Plank</p>
+                <img src="images/Plank.jpg" alt="Workout Demonstration">
+
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Atvēsināšanas vingrinājumi</h2>
+            <p>Nosledzot treniņu varat veikt atvēsinošos vingrinājumus, lai atbrīvot ķermeņi no pārāk lielas slodzes. Atvesināšanas vingrinājumi veicina asinsrīti un samazina sirds un citu muskuļu pārslodzi.
+                Turklāt jūs pazemināsiet savu sirdsdarbības ātrumu, ķermeņa temperatūru un asinsspiedienu līdz normālam līmenim.</p>
+            <div class="image-container">
+                <img src="images/cooldown.jpg" alt="Cool Down Stretches">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

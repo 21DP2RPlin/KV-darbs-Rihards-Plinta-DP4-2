@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      /* TITLE */
+       .content h1 {
+        margin-bottom: 10px;
+        font-size: 90px;
+        color: white;
+        /*background-image: conic-gradient(#553c9a 30%, #ee4b2b 40%, #ee4b2b 70%, #00c2cb 80%, #553c9a);
+        color: transparent;*/
+        text-transform: uppercase;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 3px #0f0101f7;
+        font-family: 'Arial', 'Helvetica', sans-serif;
+      }
+
+      #navbar {
+        font-size: 16px; 
+      }
+
+      #navbar a {
+        font-size: inherit; /* Ensures that links inside the navbar inherit the font size from the parent */
+      }
+
+      /*menu rajoni*/
+
+      li a {
+        text-decoration: none;
+        color: #2d2f31;
+        font-size: 26px;
+        transition: color 0.3s;
+      }
+
+      li a:hover {
+        color: #007bff;
+      }
+
+      nav {
+        position: fixed;
+        top: 30px; /* Можно настроить */
+        left: 0;
+        z-index: 10;
+        width: 220px;
+        background: #d9d9d9;
+        border-radius: 0 10px 10px 0;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      label span {
+        padding: 20px 30px;
+        background: #2d2f31;
+        color: white;
+        font-size: 1.2em;
+        font-variant: small-caps;
+        cursor: pointer;
+        display: block;
+        border-radius: 10px 10px 0 0;
+      }
+
+      label span::after {
+        float: right;
+        content: "+";
+      }
+
+      .slide {
+        clear: both;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        text-align: left;
+        transition: height 0.4s ease;
+        padding: 0;
+        margin: 0;
+      }
+
+      .slide li {
+        padding: 15px 30px;
+        list-style: none;
+        border-top: 1px solid #ccc;
+      }
+
+      #touch {
+        position: absolute;
+        opacity: 0;
+        height: 0;
+      }
+
+      #touch:checked ~ .slide {
+        height: 400px; /* Увеличь при необходимости */
+        overflow-y: auto;
+      }
+
+
+      </style>
+</head>
+<body>
+ <div class = "page-container">
+    <ul id="navbar">
+     <li><a href="index.html">Home</a></li>
+     <li><a href="contactinfo.html">Kontaktinformācija</a></li>
+     <li><a href="ParVietni.html">Par vietni</a></li>
+     <li><a href="Map.html">Laukumu karte</a></li>
+     <li><a href="profile.php">Profils</a></li>
+    </ul>
+
+    <nav>
+      <input type="checkbox" id="touch">
+      <label for="touch"><span>Rīgas rajoni</i></span></label>
+        <ul class="slide">
+          <li><a href="Rajoni/Āgenskalns/Āgenskalns.php">Āgenskalns</a></li>
+          <li><a href="Rajoni/Atgāzene/Atgāzne.php">Atgāzene</a></li>
+          <li><a href="Rajoni/Avotu iela/Avotu_iela.php">Avotu iela</a></li>
+          <li><a href="Rajoni/Beberbeķi/Beberbeķi.php">Beberbeķi</a></li>
+          <li><a href="Rajoni/Berģi/Berģi.php">Berģi</a></li>
+          <li><a href="Rajoni/Bieriņi/Bieriņi.php">Bieriņi</a></li>
+          <li><a href="Rajoni/Bišumuiža/Bišumuiža.php">Bišumuiža</a></li>
+          <li><a href="Rajoni/Bolderāja/Bolderāja.php">Bolderāja</a></li>
+          <li><a href="Rajoni/Brasa/Brasa.php">Brasa</a></li>
+          <li><a href="Rajoni/Brekši/Brekši.php">Brekši</a></li>
+          <li><a href="Rajoni/Bukulti/Bukulti.php">Bukulti</a></li>
+          <li><a href="Rajoni/Centrs/Centrs.php">Centrs</a></li>
+          <li><a href="Rajoni/Čiekurkalns/Čiekurkalns.php">Čiekurkalns</a></li>
+          <li><a href="Rajoni/Daugavgrīva/Daugavgrīva.php">Daugavgrīva</a></li>
+          <li><a href="Rajoni/Dzirciems/Dzirciems.php">Dzirciems</a></li>
+          <li><a href="Rajoni/Dārzciems/Dārzciems.php">Dārzciems</a></li>
+          <li><a href="Rajoni/Dārziņi/Dārziņi.php">Dārziņi</a></li>
+          <li><a href="Rajoni/Grīziņkalns/Grīziņkalns.php">Grīziņkalns</a></li>
+          <li><a href="Rajoni/Iļģuciems/Iļģuciems.php">Iļģuciems</a></li>
+          <li><a href="Rajoni/Imanta/Imanta.php">Imanta</a></li>
+          <li><a href="Rajoni/Jugla/Jugla.php">Jugla</a></li>
+          <li><a href="Rajoni/Katlakalns/Katlakalns.php">Katlakalns</a></li>
+          <li><a href="Rajoni/Kengarags/Kengarags.php">Kengarags</a></li>
+          <li><a href="Rajoni/Ķīpsala/Ķīpsala.php">Ķīpsala</a></li>
+          <li><a href="Rajoni/Kleisti/Kleisti.php">Kleisti</a></li>
+          <li><a href="Rajoni/Kundziņsala/Kundziņsala.php">Kundziņsala</a></li>
+          <li><a href="Rajoni/Mangaļsala/Mangaļsala.php">Mangaļsala</a></li>
+          <li><a href="Rajoni/Mežaparks/Mežaparks.php">Mežaparks</a></li>
+          <li><a href="Rajoni/Mežciems/Mežciems.php">Mežciems</a></li>
+          <li><a href="Rajoni/Mīlgrāvis/Mīlgrāvis.php">Mīlgrāvis</a></li>
+          <li><a href="Rajoni/Mūkupurvs/Mūkupurvs.php">Mūkupurvs</a></li>
+          <li><a href="Rajoni/Pleskodāle/Pleskodāle.php">Pleskodāle</a></li>
+          <li><a href="Rajoni/Pļavnieki/Pļavnieki.php">Pļavnieki</a></li>
+          <li><a href="Rajoni/Purvciems/Purvciems.php">Purvciems</a></li>
+          <li><a href="Rajoni/Rītabuļļi/Rītabuļļi.php">Rītabuļļi</a></li>
+          <li><a href="Rajoni/Rumbula/Rumbula.php">Rumbula</a></li>
+          <li><a href="Rajoni/Salas/Salas.php">Salas</a></li>
+          <li><a href="Rajoni/Sarkandaugava/Sarkandaugava.php">Sarkandaugava</a></li>
+          <li><a href="Rajoni/Skanste/Skanste.php">Skanste</a></li>
+          <li><a href="Rajoni/Spilve/Spilve.php">Spilve</a></li>
+          <li><a href="Rajoni/Suntaži/Suntaži.php">Suntaži</a></li>
+          <li><a href="Rajoni/Teika/Teika.php">Teika</a></li>
+          <li><a href="Rajoni/Torņakalns/Torņakalns.php">Torņakalns</a></li>
+          <li><a href="Rajoni/Trīsciems/Trīsciems.php">Trīsciems</a></li>
+          <li><a href="Rajoni/Vekši/Vekši.php">Vekši</a></li>
+          <li><a href="Rajoni/Vecdaugava/Vecdaugava.php">Vecdaugava</a></li>
+          <li><a href="Rajoni/Vecmīlgrāvis/Vecmīlgrāvis.php">Vecmīlgrāvis</a></li>
+          <li><a href="Rajoni/Vecpilsēta/Vecpilsēta.php">Vecpilsēta</a></li>
+          <li><a href="Rajoni/Vecāķi/Vecāķi.php">Vecāķi</a></li>
+          <li><a href="Rajoni/Zasulauks/Zasulauks.php">Zasulauks</a></li>
+          <li><a href="Rajoni/Ziepniekkalns/Ziepniekkalns.php">Ziepniekkalns</a></li>
+          <li><a href="Rajoni/Zolitūde/Zolitūde.php">Zolitūde</a></li>
+        </ul>    
+    </nav>
+    
+    <div class = "container">
+        <div class = "content">
+          <h1>Āra Sporta Laukumi</h1>
+          <div class="image-buttons">
+            <a href="trpr.html">
+              <div class="button-text">Treniņu programmas</div>
+              <img src="images/trainingprogram.jpg" alt="Find Near">
+            </a>
+            <a href="veseligsuzturs.html">
+              <div class="button-text">Veseligs uzturs</div>
+              <img src="images/veseligsuzturs.jpg" alt="Button 2">
+            </a>
+            <a href="Map.html">
+              <div class="button-text">Laukumu karte</div>
+              <img src="images/map1.jpg" alt="Button 3">
+            </a>
+            <a href="info.html">
+              <div class="button-text">Noderīga informācija</div>
+              <img src="images/pievparralel.png" alt="Button 4">
+            </a>
+        </div>
+        </div>
+     </div>
+     <div style="display: none;">
+      <img src="BGphotos/photo1.png" alt="">
+      <img src="BGphotos/photo2.png" alt="">
+      <img src="BGphotos/photo3.png" alt="">
+      <img src="BGphotos/photo4.png" alt="">
+      <img src="BGphotos/photo5.png" alt="">
+      <img src="BGphotos/photo6.png" alt="">
+      <img src="BGphotos/photo7.png" alt="">
+      <img src="BGphotos/photo8.png" alt="">
+      <img src="BGphotos/photo9.png" alt="">
+      <img src="BGphotos/photo10.png" alt="">
+
+    </div>
+  
+ </div>
+</body>
+<script>
+  function toggleDropdown() {
+    const menu = document.getElementById("dropdownMenu");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+  }
+
+  // Закрытие при клике вне меню
+  window.addEventListener("click", function(event) {
+    const button = document.querySelector(".dropdown-button");
+    const menu = document.getElementById("dropdownMenu");
+
+    if (!button.contains(event.target) && !menu.contains(event.target)) {
+      menu.style.display = "none";
+    }
+  });
+</script>
+
+</html>

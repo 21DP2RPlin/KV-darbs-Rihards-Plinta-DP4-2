@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treniņu programmas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+
+        .program-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .program {
+            display: flex;
+            align-items: center;
+            background: white;
+            width: 95%;
+            max-width: 1100px;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-out;
+            will-change: transform;
+        }
+
+        .program:hover {
+            transform: scale(1.03);
+        }
+
+        .program img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-right: 30px;
+        }
+
+        .program-details {
+            flex-grow: 1;
+        }
+
+        .program-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .program-desc {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .program-btn {
+            text-decoration: none;
+            background: #007bff;
+            color: white;
+            padding: 12px 18px;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .program-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contactinfo.html">Kontaktinformācija</a></li>
+        <li><a href="ParVietni.html">Par vietni</a></li>
+        <li><a href="Map.html">Laukumu karte</a></li>
+        <li><a href="profile.php">Profils</a></li>
+    </ul>
+
+    <div class="program-container">
+        <div class="program">
+            <img src="images/beginnerpr.jpg" alt="Workout 1">
+            <div class="program-details">
+                <div class="program-title">Treniņu programma iesacējiem</div>
+                <div class="program-desc">Vienkārša programma ķermeņa muskuļu nostiprināšanai</div>
+            </div>
+            <a href="beginner.html" class="program-btn">Apskatīt programmu</a>
+        </div>
+
+        <div class="program">
+            <img src="images/trainingprogram.jpg" alt="Workout 2">
+            <div class="program-details">
+                <div class="program-title">Treniņu programma visām muskuļu grupām (FULL BODY)</div>
+                <div class="program-desc">“Fullbody” ietver treniņu veikšanu visām muskuļu grupām vienā sesijā.</div>
+            </div>
+            <a href="FullBody.html" class="program-btn">Apskatīt programmu</a>
+        </div>
+        
+        <div class="program">
+            <img src="images/backbicepspr.jpg" alt="Workout 3">
+            <div class="program-details">
+                <div class="program-title">Treniņu programma muguras un bicepsa attistīšanai</div>
+                <div class="program-desc">Efektivie vingrinājumi muguras un bicepsa attistīšanai</div>
+            </div>
+            <a href="backbiceps.html" class="program-btn">Apskatīt programmu</a>
+        </div>
+    </div>
+</body>
+</html>

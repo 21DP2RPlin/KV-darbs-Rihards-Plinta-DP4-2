@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laukumu Karte</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        /* Map Container */
+        .map-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 90vh;
+            background: linear-gradient(to bottom, #6ac3dc, #2980b9);
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Heading */
+        .map-container h1 {
+            font-size: 42px;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            margin-bottom: 10px;
+        }
+
+        /* Google Map Frame */
+        .map-container iframe {
+            width: 90%;
+            max-width: 1200px;
+            /*height: 70vh;*/
+            height:515px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+    </style>
+</head>
+<body>
+    <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contactinfo.html">Kontaktinformācija</a></li>
+        <li><a href="ParVietni.html">Par vietni</a></li>
+        <li><a href="Map.html">Laukumu karte</a></li>
+        <li><a href="profile.php">Profils</a></li>
+    </ul>
+
+    <!-- Map Section -->
+    <div class="map-container">
+        <h1>Laukumu Karte</h1>
+        <iframe src="https://www.google.com/maps/d/embed?mid=110qK-mirpefmOGk309pyxkfafG8b344&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+    </div>
+
+</body>
+</html>
